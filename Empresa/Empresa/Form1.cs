@@ -19,7 +19,7 @@ namespace Empresa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 menu = new Form2();
+            Form2 menu = new Form2(textBox1.Text);
             menu.Show();
             this.Hide();
         }
