@@ -16,6 +16,8 @@ namespace Empresa
         {
             InitializeComponent();
         }
+
+        
         public Form2(string nome)
         {
             InitializeComponent();
@@ -24,13 +26,15 @@ namespace Empresa
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            toolStripStatusLabel2.Text = "Data Atual " + DateTime.Now.ToShortDateString();
-            toolStripStatusLabel3.Text = "Hora Atual " + DateTime.Now.ToLongTimeString();
+            toolStripStatusLabel2.Text =
+                "Data Atual " + DateTime.Now.ToShortDateString();
+            toolStripStatusLabel3.Text =
+                "Hora Atual " + DateTime.Now.ToLongTimeString();
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+                Application.Exit();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,7 +53,14 @@ namespace Empresa
 
         private void blocoDeNotasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("notepad.exe");
+            System.Diagnostics.Process.Start("winword.exe");
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 cadcli = new Form3();
+            cadcli.Show();
+           
         }
     }
 }
