@@ -58,6 +58,12 @@
     <Compile Include="FrmFibonnacci.Designer.cs">
       <DependentUpon>FrmFibonnacci.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLouco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLouco.Designer.cs">
+      <DependentUpon>FrmLouco.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
