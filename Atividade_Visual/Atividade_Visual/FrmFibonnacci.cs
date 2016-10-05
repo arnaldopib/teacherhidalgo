@@ -32,6 +32,21 @@ namespace Atividade_Visual
                 a = p;
                 p = x;
             }
+            button1.Enabled = false;
+            button2.Enabled = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txtNum.Text = "";
+            listBox1.Items.Clear();
+            button1.Enabled = true;
+            button2.Enabled = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

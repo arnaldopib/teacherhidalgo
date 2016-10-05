@@ -41,7 +41,7 @@ namespace Atividade_Visual
                     if ((textBox1.Text == "Admin") && (textBox2.Text == "123456"))
                     {
                         MessageBox.Show("Bem vindo Sr. Administrador");
-                        FrmMenu menu = new FrmMenu("Arnaldo Martins Hidalgo Junior");
+                        FrmMenu menu = new FrmMenu("Arnaldo Martins Hidalgo Junior",1);
                         menu.Show();
                     }
                     else
@@ -50,7 +50,7 @@ namespace Atividade_Visual
                         {
 
                             MessageBox.Show("Bem vindo Sra. Secretaria");
-                            FrmMenu menu = new FrmMenu("Renata Hidalgo");
+                            FrmMenu menu = new FrmMenu("Renata Hidalgo",2);
                             menu.Show();
                         }
                         else

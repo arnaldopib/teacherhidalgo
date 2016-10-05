@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/WindowsForms_BD
+/Application1
+/Aplicativo

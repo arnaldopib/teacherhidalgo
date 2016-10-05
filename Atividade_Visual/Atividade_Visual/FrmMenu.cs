@@ -12,6 +12,7 @@ namespace Atividade_Visual
 {
     public partial class FrmMenu : Form
     {
+        public int nv = 0;
         public FrmMenu()
         {
             InitializeComponent();
@@ -20,6 +21,23 @@ namespace Atividade_Visual
         public FrmMenu(string info)
         {
             InitializeComponent();
+            toolStripStatusLabel1.Text = info.ToString();
+        }
+        public FrmMenu(string info, int nivel)
+        {
+            nv = nivel;
+            InitializeComponent();
+            if (nv == 1)
+            {
+                loucoToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                if(nv == 2)
+                {
+                    primosToolStripMenuItem.Enabled = false;
+                }
+            }
             toolStripStatusLabel1.Text = info.ToString();
         }
 
